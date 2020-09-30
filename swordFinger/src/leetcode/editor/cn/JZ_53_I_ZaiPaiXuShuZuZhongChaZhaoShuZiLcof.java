@@ -28,9 +28,9 @@ package leetcode.editor.cn;
 
 
 //Java：在排序数组中查找数字 I
-public class ZaiPaiXuShuZuZhongChaZhaoShuZiLcof {
+public class JZ_53_I_ZaiPaiXuShuZuZhongChaZhaoShuZiLcof {
     public static void main(String[] args) {
-        Solution solution = new ZaiPaiXuShuZuZhongChaZhaoShuZiLcof().new Solution();
+        Solution solution = new JZ_53_I_ZaiPaiXuShuZuZhongChaZhaoShuZiLcof().new Solution();
         // TO TEST
     }
 

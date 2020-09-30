@@ -22,9 +22,9 @@ package leetcode.editor.cn;
 
 
 //Java：丑数
-public class ChouShuLcof {
+public class JZ_49_ChouShuLcof {
     public static void main(String[] args) {
-        Solution solution = new ChouShuLcof().new Solution();
+        Solution solution = new JZ_49_ChouShuLcof().new Solution();
         // TO TEST
     }
 

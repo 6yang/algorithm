@@ -63,9 +63,9 @@ package leetcode.editor.cn;
 
 
 //Java：两个链表的第一个公共节点
-public class LiangGeLianBiaoDeDiYiGeGongGongJieDianLcof {
+public class JZ_52_LiangGeLianBiaoDeDiYiGeGongGongJieDianLcof {
     public static void main(String[] args) {
-        Solution solution = new LiangGeLianBiaoDeDiYiGeGongGongJieDianLcof().new Solution();
+        Solution solution = new JZ_52_LiangGeLianBiaoDeDiYiGeGongGongJieDianLcof().new Solution();
         // TO TEST
     }
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -20,9 +20,9 @@ package leetcode.editor.cn;
 
 
 //Java：第一个只出现一次的字符
-public class DiYiGeZhiChuXianYiCiDeZiFuLcof {
+public class JZ_50_DiYiGeZhiChuXianYiCiDeZiFuLcof {
     public static void main(String[] args) {
-        Solution solution = new DiYiGeZhiChuXianYiCiDeZiFuLcof().new Solution();
+        Solution solution = new JZ_50_DiYiGeZhiChuXianYiCiDeZiFuLcof().new Solution();
         // TO TEST
     }
 
