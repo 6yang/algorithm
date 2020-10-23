@@ -7,13 +7,10 @@ package leetcode.editor.cn;
 // 👍 112 👎 0
 
 
-import java.util.HashMap;
-import java.util.Map;
-
 //Java：表示数值的字符串
-public class BiaoShiShuZhiDeZiFuChuanLcof {
+public class JZ_20_BiaoShiShuZhiDeZiFuChuanLcof {
     public static void main(String[] args) {
-        Solution solution = new BiaoShiShuZhiDeZiFuChuanLcof().new Solution();
+        Solution solution = new JZ_20_BiaoShiShuZhiDeZiFuChuanLcof().new Solution();
         // TO TEST
         solution.isNumber("0");
     }

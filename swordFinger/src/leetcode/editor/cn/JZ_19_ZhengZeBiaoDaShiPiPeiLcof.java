@@ -57,9 +57,9 @@ package leetcode.editor.cn;
 
 
 //Java：正则表达式匹配
-public class ZhengZeBiaoDaShiPiPeiLcof{
+public class JZ_19_ZhengZeBiaoDaShiPiPeiLcof {
     public static void main(String[] args) {
-        Solution solution = new ZhengZeBiaoDaShiPiPeiLcof().new Solution();
+        Solution solution = new JZ_19_ZhengZeBiaoDaShiPiPeiLcof().new Solution();
         // TO TEST
     }
     //leetcode submit region begin(Prohibit modification and deletion)
