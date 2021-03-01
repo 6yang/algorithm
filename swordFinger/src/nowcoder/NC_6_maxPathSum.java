@@ -1,10 +1,12 @@
 package nowcoder;
 
 public class NC_6_maxPathSum {
+
     int res = Integer.MIN_VALUE;
-    public int maxPathSum (TreeNode root) {
+
+    public int maxPathSum(TreeNode root) {
         // write code here
-        if(root == null){
+        if (root == null) {
             return 0;
         }
         dfs(root);
@@ -12,13 +14,12 @@ public class NC_6_maxPathSum {
     }
 
     private int dfs(TreeNode root) {
-        if(root==null){
+        if (root == null) {
             return 0;
         }
-
         int left = Math.max(0,dfs(root.left));
         int right = Math.max(0,dfs(root.right));
-        res = Math.max(res,root.val + left+right);
+        res = Math.max(res,left + right +root.val);
         return root.val + Math.max(left,right);
     }
 }
