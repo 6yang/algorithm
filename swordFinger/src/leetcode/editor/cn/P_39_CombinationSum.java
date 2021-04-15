@@ -50,42 +50,39 @@ import java.util.Arrays;
 import java.util.List;
 
 //Java：组合总和
-public class P_39_CombinationSum{
+public class P_39_CombinationSum {
     public static void main(String[] args) {
         Solution solution = new P_39_CombinationSum().new Solution();
         // TO TEST
     }
+
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-        List<List<Integer>> out = new ArrayList<>();
+    class Solution {
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> path = new ArrayList<>();
+
         public List<List<Integer>> combinationSum(int[] candidates, int target) {
-            if(candidates== null || candidates.length==0|| target==0) return out;
+            if (candidates.length == 0 || target == 0) {
+                return res;
+            }
             Arrays.sort(candidates);
-            ArrayList<Integer> res = new ArrayList<>();
-            dfs(candidates,target,0,res);
-            return out;
+            dfs(candidates,target,0);
+            return res;
         }
 
-        private void dfs(int[] candidates, int target, int begin, ArrayList<Integer> res) {
-            if(target<0){
-                return ;
-
-            }
-            if(target==0){
-                out.add(new ArrayList<>(res));
+        private void dfs(int[] candidates, int target,int begin) {
+            if(target<0) return ;
+            if(target == 0){
+                res.add(new ArrayList<>(path));
                 return;
             }
             for (int i = begin; i < candidates.length; i++) {
-                if(candidates[i]>target) continue; // 剪枝
-                res.add(candidates[i]);
-                dfs(candidates,target-candidates[i],i,res);
-                res.remove(res.size()-1);
+                if(candidates[i]>target) continue;
+                path.add(candidates[i]);
+                dfs(candidates,target-candidates[i],begin);
+                path.remove(path.size()-1);
             }
         }
-
-
-
     }
-//leetcode submit region end(Prohibit modification and deletion)
 
 }
